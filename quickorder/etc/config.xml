@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<!--
+/**
+* FMG
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade Magento to newer
+* Versions in the future. If you wish to customize Magento for your
+* needs please refer to http://www.magentocommerce.com for more information.
+*
+* @category Discount
+* @package Discount_Coffee
+* @author FMG Core Team <info@groupfmg.com>
+*/
+-->
+<config>
+	<modules>
+		<Discountcoffee_Quickorder>
+			<version>1.0.0.0.1</version>
+		</Discountcoffee_Quickorder>
+	</modules>
+    <frontend>
+        <layout>
+            <updates>
+                <discountcoffee_quickorder>
+                    <file>discountcoffee_quickorder.xml</file>
+                </discountcoffee_quickorder>
+            </updates>
+        </layout>
+        <routers>
+            <discountcoffee_quickorder>
+                <use>standard</use>
+                <args>
+                    <module>Discountcoffee_Quickorder</module>
+                    <frontName>quickorder</frontName>
+                </args>
+            </discountcoffee_quickorder>
+        </routers>
+    </frontend>
+    <global>
+        <models>
+            <discountcoffee_quickorder>
+                <class>Discountcoffee_Quickorder_Model</class>
+            </discountcoffee_quickorder>
+        </models>
+        <helpers>
+            <discountcoffee_quickorder>
+                <class>Discountcoffee_Quickorder_Helper</class>
+            </discountcoffee_quickorder>
+        </helpers>
+        <blocks>
+            <discountcoffee_quickorder>
+                <class>Discountcoffee_Quickorder_Block</class>
+            </discountcoffee_quickorder>
+        </blocks>
+    </global>
+    <default>
+        <quickorder>
+            <view>
+                <enabled>1</enabled>
+                <rows_per_view>10</rows_per_view>
+            </view>
+        </quickorder>
+    </default>
+</config>

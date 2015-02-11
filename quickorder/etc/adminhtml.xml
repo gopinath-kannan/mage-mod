@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!--
+/**
+* FMG
+*
+* NOTICE OF LICENSE
+*
+* This source file is subject to the Academic Free License (AFL 3.0)
+*
+* DISCLAIMER
+*
+* Do not edit or add to this file if you wish to upgrade Magento to newer
+* Versions in the future. If you wish to customize Magento for your
+* needs please refer to http://www.magentocommerce.com for more information.
+*
+* @category Discount
+* @package Discount_Coffee
+* @author FMG Core Team <info@groupfmg.com>
+*/
+-->
+<config>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+                    <system>
+                        <children>
+                            <config>
+                                <children>
+                                    <quickorder>
+                                        <title>Store Quickorder Module Section</title>
+                                    </quickorder>
+                                </children>
+                            </config>
+                        </children>
+                    </system>
+                </children>
+            </admin>
+        </resources>
+    </acl>
+</config>
