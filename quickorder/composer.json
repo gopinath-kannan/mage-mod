@@ -4,6 +4,7 @@
     "type": "magento-module",
     "homepage": "https://github.com/gopinath-kannan/mage-mod",
     "license": "OSL-3.0",
+	"minimum-stability":"stable",
     "authors": [
         {
             "name": "Gopinath",
